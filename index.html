@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Titulo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Quer sair comigo ?</h1>
+  <div id="buttonms">
+      <a class="buttonms" href="https://www.cinemark.com.br/sao-paulo/filmes/em-cartaz">SIM</a>
+      <div id="areaBotao">
+        <button id="botao1">NÃO</button>
+      </div>
+  </div>
+  <script>
+      var botao = document.getElementById('botao1');
+      var areaBotao = document.getElementById('areaBotao');
+
+      areaBotao.onmouseover = function(event) {
+          var x = Math.floor(Math.random() * window.innerWidth);
+          var y = Math.floor(Math.random() * window.innerHeight);
+          botao.style.left = x + 'px';
+          botao.style.top = y + 'px';
+      }
+  </script>
+</body>
+</html>
