@@ -4,14 +4,18 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  background-color: #cc3b3b;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+
+  background-image: url('./img/4094511.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h1 {
-  margin-bottom: 3.125rem;
-  color: #fffdfd;
+  margin-bottom: 50px;
+  color: #fffffd;
 }
 
 #buttonms {
@@ -31,36 +35,34 @@ h1 {
 
 a {
   color: rgb(0, 0, 0);
-  border-radius: 2rem;
-  border: none;
-  background-color: #FFF;
-  margin: 0.625rem;
-  padding: 1.25rem 1.5625rem;
-  font-size: 1.25rem;
-  text-decoration: none;
 }
 
-button {
+a {
   border-radius: 2rem;
   border: none;
-  background-color: #FFF;
-  margin: 0.625rem;
-  padding: 1.25rem 1.5625rem;
-  font-size: 1.25rem;
+  background-color: #c9d4bb;
+  margin: 10px;
+  padding: 20px 25px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 #botao1 {
   position: absolute;
 }
 
-@media only screen and (max-width: 700px) {
-  #buttonms {
-    margin-right: 6rem;
+/* Add a media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column; /* change this to column on smaller screens to stack elements vertically */
   }
   
-  a, button {
-    padding: 0.625rem 0.9375rem; 
-    font-size: 1rem; 
+  #buttonms {
+    margin-right: 6rem; /* remove the right margin on smaller screens */
+  }
+  
+  a {
+    padding: 10px 15px; /* reduce padding on smaller screens */
+    font-size: 16px; /* reduce font size on smaller screens */
   }
 }
-
