@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,23 +11,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Quer sair comigo ?</h1>
+  <h1 class="db">Quando que vamos<br/> assitir algum filme?</h1>
   <div id="buttonms">
       <a class="buttonms" href="https://www.cinemark.com.br/sao-paulo/filmes/em-cartaz">SIM</a>
       <div id="areaBotao">
-        <button id="botao1">NÃO</button>
+        <a class="buttonms" id="botao1">NÃO</a>
       </div>
   </div>
   <script>
-      var botao = document.getElementById('botao1');
-      var areaBotao = document.getElementById('areaBotao');
+    var botao = document.getElementById('botao1');
+    var areaBotao = document.getElementById('areaBotao');
 
-      areaBotao.onmouseover = function(event) {
-          var x = Math.floor(Math.random() * window.innerWidth);
-          var y = Math.floor(Math.random() * window.innerHeight);
-          botao.style.left = x + 'px';
-          botao.style.top = y + 'px';
+    areaBotao.onmouseover = function(event) {
+      var x = Math.floor(Math.random() * (window.innerWidth - botao.offsetWidth));
+      var y = Math.floor(Math.random() * (window.innerHeight - botao.offsetHeight));
+      
+      if (x < 0) {
+        x = 0;
+      } else if (x > (window.innerWidth - botao.offsetWidth)) {
+        x = window.innerWidth - botao.offsetWidth;
       }
+      
+      if (y < 0) {
+        y = 0;
+      } else if (y > (window.innerHeight - botao.offsetHeight)) {
+        y = window.innerHeight - botao.offsetHeight;
+      }
+
+      botao.style.left = x + 'px';
+      botao.style.top = y + 'px';
+    }
   </script>
 </body>
 </html>
+
