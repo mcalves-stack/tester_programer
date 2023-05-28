@@ -90,3 +90,10 @@ a {
     font-size: 18px; /* adjust font size for medium screens */
   }
 }
+
+@media (max-width: 360px) {
+  a {
+    padding: 5px 10px; /* reduce padding on J5 screens */
+    font-size: 14px; /* reduce font size on J5 screens */
+  }
+}
