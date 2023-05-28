@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
     var botao = document.getElementById('botao1');
     var areaBotao = document.getElementById('areaBotao');
 
-    areaBotao.onmouseover = function(event) {
+    var moveButton = function(event) {
       var x = Math.floor(Math.random() * (window.innerWidth - botao.offsetWidth));
       var y = Math.floor(Math.random() * (window.innerHeight - botao.offsetHeight));
       
@@ -40,6 +40,13 @@
 
       botao.style.left = x + 'px';
       botao.style.top = y + 'px';
+    }
+
+    // Check if user is on a mobile device
+    if ('ontouchstart' in window) {
+      areaBotao.ontouchstart = moveButton;
+    } else {
+      areaBotao.onmouseover = moveButton;
     }
   </script>
 </body>
