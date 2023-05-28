@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem; /* 50px */
   color: #fffffd;
 }
 
@@ -26,13 +26,12 @@ h1 {
 
 .buttonms {
   transition-duration: 0.4s;
-  transition-duration: 0.4s;
   border-radius: 2rem;
   border: none;
   background-color: #c9d4bb;
-  margin: 10px;
-  padding: 20px 25px;
-  font-size: 20px;
+  margin: 0.625rem; /* 10px */
+  padding: 1.25rem 1.5625rem; /* 20px 25px */
+  font-size: 1.25rem; /* 20px */
   text-decoration: none;
 }
 
@@ -43,57 +42,15 @@ h1 {
 
 a {
   color: rgb(0, 0, 0);
-}
-
-a {
   border-radius: 2rem;
   border: none;
   background-color: #c9d4bb;
-  margin: 10px;
-  padding: 20px 25px;
-  font-size: 20px;
+  margin: 0.625rem; /* 10px */
+  padding: 1.25rem 1.5625rem; /* 20px 25px */
+  font-size: 1.25rem; /* 20px */
   text-decoration: none;
 }
 
 #botao1 {
   position: absolute;
-}
-
-/* Add a media query for screens smaller than 600px */
-@media (max-width: 600px) {
-  body {
-    flex-direction: column; /* change this to column on smaller screens to stack elements vertically */
-  }
-  
-  #buttonms {
-    margin-right: 7rem; /* remove the right margin on smaller screens */
-  }
-  
-  a {
-    padding: 10px 15px; /* reduce padding on smaller screens */
-    font-size: 16px; /* reduce font size on smaller screens */
-  }
-}
-
-/* Add a media query for screens smaller than 480px */
-@media (max-width: 480px) {
-  a {
-    padding: 5px 10px; /* reduce padding on even smaller screens */
-    font-size: 14px; /* reduce font size on even smaller screens */
-  }
-}
-
-/* Add a media query for screens larger than 600px but smaller than 1200px */
-@media (min-width: 601px) and (max-width: 1200px) {
-  a {
-    padding: 15px 20px; /* adjust padding for medium screens */
-    font-size: 18px; /* adjust font size for medium screens */
-  }
-}
-
-@media (max-width: 360px) {
-  a {
-    padding: 5px 10px; /* reduce padding on J5 screens */
-    font-size: 14px; /* reduce font size on J5 screens */
-  }
 }
