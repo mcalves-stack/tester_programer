@@ -13,12 +13,21 @@
 <body>
   <h1 class="db">Querida dama vamooss jogar genshin :3?</h1>
   <div id="buttonms">
-      <a class="buttonms" href="https://genshin.hoyoverse.com/pt/">SIM</a>
+      <!-- Adicionando um id "sim" para referência no script -->
+      <a class="buttonms" href="https://genshin.hoyoverse.com/pt/" id="sim">SIM</a>
       <div id="areaBotao">
         <button class="buttondonao" id="botao1">NÃO</button>
       </div>
   </div>
   <script>
+    // Função para exibir o alerta
+    function exibirAlerta() {
+      alert("Aeee melhor escolhaaa!!!");
+    }
+
+    // Adicionando um event listener para o clique no botão "SIM"
+    document.getElementById('sim').addEventListener('click', exibirAlerta);
+
     var botao = document.getElementById('botao1');
     var areaBotao = document.getElementById('areaBotao');
 
@@ -51,4 +60,3 @@
   </script>
 </body>
 </html>
-
