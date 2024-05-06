@@ -24,14 +24,15 @@ h1 {
   h1 {
     margin-bottom: 3.125rem; /* 50px */
     color: #fffffd;
-    margin-left: 42px;
+    margin:  0 auto;
+    margin-bottom: 1rem;
   }
 }
 
 #buttonms {
   display: flex;
   flex-direction: row;
-  margin-right: 7.8rem;
+  margin-right: 7.1rem;
 }
 
 
